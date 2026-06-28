@@ -1,7 +1,8 @@
 import type Stripe from "stripe";
 import { NextResponse } from "next/server";
 
-import { getDownloadsForPlan, toPlanId } from "@/lib/downloads";
+import { getSecuredDownloadsForPlan } from "@/lib/secured-downloads";
+import { toPlanId } from "@/lib/downloads";
 import { sendDeliveryEmail } from "@/lib/email";
 import {
   hasProcessedWebhookEvent,
@@ -44,11 +45,14 @@ export async function POST(request: Request) {
 
       let emailDeliveryResult: { sent: boolean; reason?: string } | undefined;
       if (isPaid && plan && email) {
-        const downloads = getDownloadsForPlan(plan);
+        const origin = process.env.NEXT_PUBLIC_APP_URL?.trim() || new URL(request.url).origin;
+        const downloads = getSecuredDownloadsForPlan(plan, session.id, origin);
         emailDeliveryResult = await sendDeliveryEmail({
           to: email,
           plan,
           downloads,
+          sessionId: session.id,
+          origin,
         });
       }
 

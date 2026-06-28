@@ -1,7 +1,5 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-
 import { getPromptAssetByKey } from "@/lib/prompt-assets";
+import { readPromptAssetContent } from "@/lib/prompt-assets";
 
 export async function buildObjectiveWithPurchasedAsset(objective: string, promptAssetKey?: string) {
   const trimmedObjective = objective.trim();
@@ -15,9 +13,12 @@ export async function buildObjectiveWithPurchasedAsset(objective: string, prompt
   }
 
   try {
-    const filePath = path.join(process.cwd(), "public", asset.publicPath.replace(/^\//, ""));
-    const content = await readFile(filePath, "utf8");
-    const contextExcerpt = content.slice(0, 1600);
+    const assetContent = await readPromptAssetContent(promptAssetKey);
+    if (!assetContent) {
+      return trimmedObjective;
+    }
+
+    const contextExcerpt = assetContent.content.slice(0, 1600);
 
     return [
       trimmedObjective,

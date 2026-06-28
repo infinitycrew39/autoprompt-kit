@@ -63,6 +63,13 @@ function toCsv(
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
+    const requiredToken = process.env.ADMIN_DASHBOARD_TOKEN;
+    const accessToken = searchParams.get("token")?.trim();
+
+    if (requiredToken && accessToken !== requiredToken) {
+      return NextResponse.json({ error: "Admin access required." }, { status: 401 });
+    }
+
     const params: SearchParams = {
       limit: searchParams.get("limit") ?? undefined,
       status: searchParams.get("status") ?? undefined,

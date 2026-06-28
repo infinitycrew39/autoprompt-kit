@@ -19,7 +19,7 @@ export const navItems = [
   { label: "Solution", href: "#solution" },
   { label: "Packs", href: "#packs" },
   { label: "Bundles", href: "#bundles" },
-  { label: "Ops Demo", href: "/hackathon" },
+  { label: "Ops Console", href: "/hackathon" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];

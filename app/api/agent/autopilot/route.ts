@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
 
 import { runAutopilotBatch } from "@/lib/autopilot";
+import { verifyPaidPurchase } from "@/lib/purchase-access";
 
 type AutopilotBody = {
   budgetCents?: number;
   promptAssetKey?: string;
   limit?: number;
+  sessionId?: string;
 };
 
 function toPositiveInt(value: number, fallback: number) {
@@ -24,7 +26,7 @@ function getDefaultPromptAssetKey() {
   return process.env.AUTOPILOT_DEFAULT_PROMPT_ASSET_KEY?.trim();
 }
 
-function isAuthorized(request: Request) {
+async function isAuthorized(request: Request, sessionId?: string) {
   const configuredToken = process.env.AUTOPILOT_TOKEN?.trim();
   const cronSecret = process.env.CRON_SECRET?.trim();
 
@@ -42,7 +44,11 @@ function isAuthorized(request: Request) {
     return true;
   }
 
-  // Allow local manual testing only when no token protection is configured.
+  if (sessionId) {
+    const purchase = await verifyPaidPurchase(sessionId);
+    return Boolean(purchase);
+  }
+
   if (!configuredToken && !cronSecret) {
     return true;
   }
@@ -68,11 +74,11 @@ async function runAutopilot(payload: AutopilotBody, request: Request) {
 
 export async function POST(request: Request) {
   try {
-    if (!isAuthorized(request)) {
+    const body = (await request.json()) as AutopilotBody;
+    if (!(await isAuthorized(request, body.sessionId?.trim()))) {
       return NextResponse.json({ error: "Unauthorized autopilot trigger." }, { status: 401 });
     }
 
-    const body = (await request.json()) as AutopilotBody;
     return runAutopilot(body, request);
   } catch (error) {
     const message = error instanceof Error ? error.message : "Autopilot run failed.";
@@ -82,15 +88,17 @@ export async function POST(request: Request) {
 
 export async function GET(request: Request) {
   try {
-    if (!isAuthorized(request)) {
+    const url = new URL(request.url);
+    const sessionId = url.searchParams.get("sessionId")?.trim();
+    if (!(await isAuthorized(request, sessionId))) {
       return NextResponse.json({ error: "Unauthorized autopilot trigger." }, { status: 401 });
     }
 
-    const url = new URL(request.url);
     const payload: AutopilotBody = {
       budgetCents: Number(url.searchParams.get("budgetCents") ?? getDefaultBudgetCents()),
       limit: Number(url.searchParams.get("limit") ?? getDefaultLimit()),
       promptAssetKey: url.searchParams.get("promptAssetKey") ?? getDefaultPromptAssetKey(),
+      sessionId,
     };
 
     return runAutopilot(payload, request);

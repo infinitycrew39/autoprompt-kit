@@ -1,13 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
 type PromptAsset = {
   key: string;
   title: string;
-  publicPath: string;
+  filename: string;
 };
 
 type RunResponse = {
@@ -36,6 +38,9 @@ type RunResponse = {
 };
 
 export function HackathonConsole() {
+  const searchParams = useSearchParams();
+  const sessionId = searchParams.get("session_id")?.trim() ?? "";
+
   const [objective, setObjective] = useState(
     "Launch an AI growth sprint that can generate revenue and provision one SaaS tool safely.",
   );
@@ -46,7 +51,8 @@ export function HackathonConsole() {
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<RunResponse["run"] | null>(null);
   const [assets, setAssets] = useState<PromptAsset[]>([]);
-  const [selectedAsset, setSelectedAsset] = useState("starter-pack");
+  const [plan, setPlan] = useState<string | null>(null);
+  const [selectedAsset, setSelectedAsset] = useState("");
   const [assetPreview, setAssetPreview] = useState("");
   const [autopilotSummary, setAutopilotSummary] = useState<{
     count: number;
@@ -55,29 +61,57 @@ export function HackathonConsole() {
     roiCents: number;
   } | null>(null);
 
-  async function loadAssets() {
+  const loadAssets = useCallback(async () => {
+    if (!sessionId) {
+      setError("Purchase session required. Complete checkout to unlock purchased files.");
+      return;
+    }
+
     setAssetsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch("/api/hackathon/assets");
-      const data = (await response.json()) as { assets?: PromptAsset[]; error?: string };
+      const response = await fetch(
+        `/api/hackathon/assets?session_id=${encodeURIComponent(sessionId)}`,
+      );
+      const data = (await response.json()) as {
+        assets?: PromptAsset[];
+        plan?: string;
+        error?: string;
+      };
+
       if (!response.ok || !data.assets) {
+        setAssets([]);
+        setPlan(null);
         setError(data.error ?? "Unable to load purchased assets.");
         return;
       }
 
       setAssets(data.assets);
+      setPlan(data.plan ?? null);
+      setSelectedAsset((current) => current || data.assets?.[0]?.key || "");
     } catch {
       setError("Unable to load purchased assets.");
     } finally {
       setAssetsLoading(false);
     }
-  }
+  }, [sessionId]);
+
+  useEffect(() => {
+    if (sessionId) {
+      void loadAssets();
+    }
+  }, [sessionId, loadAssets]);
 
   async function loadAssetPreview(key: string) {
+    if (!sessionId || !key) {
+      return;
+    }
+
     try {
-      const response = await fetch(`/api/hackathon/assets?key=${encodeURIComponent(key)}`);
+      const response = await fetch(
+        `/api/hackathon/assets?session_id=${encodeURIComponent(sessionId)}&key=${encodeURIComponent(key)}`,
+      );
       const data = (await response.json()) as { content?: string; error?: string };
       if (!response.ok || !data.content) {
         setAssetPreview("");
@@ -90,6 +124,11 @@ export function HackathonConsole() {
   }
 
   async function runAgent() {
+    if (!sessionId) {
+      setError("Purchase session required. Complete checkout first.");
+      return;
+    }
+
     setLoading(true);
     setError(null);
 
@@ -101,6 +140,7 @@ export function HackathonConsole() {
           objective,
           budgetCents,
           promptAssetKey: selectedAsset,
+          sessionId,
         }),
       });
 
@@ -120,6 +160,11 @@ export function HackathonConsole() {
   }
 
   async function runAutopilot() {
+    if (!sessionId) {
+      setError("Purchase session required. Complete checkout first.");
+      return;
+    }
+
     setAutopilotLoading(true);
     setError(null);
 
@@ -130,6 +175,7 @@ export function HackathonConsole() {
         body: JSON.stringify({
           budgetCents,
           promptAssetKey: selectedAsset,
+          sessionId,
           limit: 2,
         }),
       });
@@ -171,20 +217,40 @@ export function HackathonConsole() {
     }
   }
 
+  if (!sessionId) {
+    return (
+      <div className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-6 text-amber-100">
+        <h2 className="text-xl font-semibold text-white">Purchase Required</h2>
+        <p className="mt-2 text-sm text-amber-100/90">
+          Ops Console only unlocks after a paid checkout. Buy a plan, then open this page from your
+          success receipt.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Button asChild>
+            <Link href="/#pricing">View Pricing</Link>
+          </Button>
+          <Button asChild variant="secondary">
+            <Link href="/">Back to Home</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
       <div className="rounded-2xl border border-white/10 bg-[#0C1730]/70 p-5">
         <p className="text-xs uppercase tracking-[0.2em] text-cyan-300/80">Hackathon Ops Console</p>
         <h2 className="mt-2 text-xl font-semibold text-white">Autonomous Run</h2>
         <p className="mt-1 text-sm text-slate-300">
-          Agent plans with Nemotron (when configured), applies NemoClaw policies, and executes Stripe
-          skills for earn/spend/provision.
+          Verified purchase session active{plan ? ` (${plan} plan)` : ""}. Agent plans with Nemotron
+          when configured, applies NemoClaw policies, and executes Stripe skills.
         </p>
 
         <div className="mt-4 space-y-3">
           <div className="flex flex-wrap gap-2">
             <Button type="button" variant="secondary" onClick={loadAssets} disabled={assetsLoading}>
-              {assetsLoading ? "Loading files..." : "Load Purchased Files"}
+              {assetsLoading ? "Loading files..." : "Reload Purchased Files"}
             </Button>
             <Button
               type="button"
@@ -194,11 +260,7 @@ export function HackathonConsole() {
             >
               Preview Selected File
             </Button>
-            <Button
-              type="button"
-              onClick={runAutopilot}
-              disabled={autopilotLoading}
-            >
+            <Button type="button" onClick={runAutopilot} disabled={autopilotLoading || assets.length === 0}>
               {autopilotLoading ? "Autopilot Running..." : "Run Full Autopilot"}
             </Button>
           </div>
@@ -208,25 +270,18 @@ export function HackathonConsole() {
             <select
               value={selectedAsset}
               onChange={(event) => setSelectedAsset(event.target.value)}
-              className="mt-1 w-full rounded-xl border border-white/10 bg-[#081225] p-3 text-sm text-slate-100"
+              disabled={assets.length === 0}
+              className="mt-1 w-full rounded-xl border border-white/10 bg-[#081225] p-3 text-sm text-slate-100 disabled:opacity-60"
             >
-              {(assets.length > 0
-                ? assets
-                : [
-                    { key: "starter-pack", title: "Starter Prompt Pack", publicPath: "" },
-                    { key: "starter-qa", title: "Prompt QA Checklist", publicPath: "" },
-                    { key: "master-index", title: "Master Index", publicPath: "" },
-                    {
-                      key: "workflow-blueprints",
-                      title: "Workflow Blueprints",
-                      publicPath: "",
-                    },
-                  ]
-              ).map((asset) => (
-                <option key={asset.key} value={asset.key}>
-                  {asset.title}
-                </option>
-              ))}
+              {assets.length === 0 ? (
+                <option value="">No purchased files loaded</option>
+              ) : (
+                assets.map((asset) => (
+                  <option key={asset.key} value={asset.key}>
+                    {asset.title}
+                  </option>
+                ))
+              )}
             </select>
           </label>
 
@@ -251,7 +306,7 @@ export function HackathonConsole() {
             />
           </label>
 
-          <Button onClick={runAgent} disabled={loading || !objective.trim()}>
+          <Button onClick={runAgent} disabled={loading || !objective.trim() || assets.length === 0}>
             {loading ? "Running..." : "Run Autonomous Ops"}
           </Button>
 
