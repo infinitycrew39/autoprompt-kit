@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Download, FlaskConical, ShieldCheck, Sparkles, Workflow } from "lucide-react";
 
+import { SavePurchaseSession } from "@/components/save-purchase-session";
 import { Button } from "@/components/ui/button";
 import { toPlanId } from "@/lib/downloads";
 import { getOrderBySessionId } from "@/lib/orders";
@@ -64,6 +65,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
 
   return (
     <main className="relative min-h-screen overflow-hidden py-20">
+      {sessionId && isPaid ? <SavePurchaseSession sessionId={sessionId} /> : null}
       <div className="container relative z-10 max-w-3xl">
         {isDemo && (
           <div className="mb-6 flex items-center gap-3 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 px-5 py-4 text-sm text-yellow-200">

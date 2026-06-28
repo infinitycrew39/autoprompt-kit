@@ -1,10 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import {
+  readPurchaseSessionId,
+  savePurchaseSessionId,
+} from "@/lib/purchase-session-client";
 
 type PromptAsset = {
   key: string;
@@ -37,10 +41,23 @@ type RunResponse = {
   };
 };
 
-export function HackathonConsole() {
-  const searchParams = useSearchParams();
-  const sessionId = searchParams.get("session_id")?.trim() ?? "";
+async function verifySession(sessionId: string) {
+  const response = await fetch(
+    `/api/hackathon/assets?session_id=${encodeURIComponent(sessionId)}`,
+  );
+  const data = (await response.json()) as { assets?: PromptAsset[]; plan?: string; error?: string };
+  return { ok: response.ok && Boolean(data.assets), data };
+}
 
+export function HackathonConsole() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const urlSessionId = searchParams.get("session_id")?.trim() ?? "";
+
+  const [sessionId, setSessionId] = useState("");
+  const [sessionReady, setSessionReady] = useState(false);
+  const [restoreInput, setRestoreInput] = useState("");
+  const [restoreLoading, setRestoreLoading] = useState(false);
   const [objective, setObjective] = useState(
     "Launch an AI growth sprint that can generate revenue and provision one SaaS tool safely.",
   );
@@ -61,6 +78,65 @@ export function HackathonConsole() {
     roiCents: number;
   } | null>(null);
 
+  const activateSession = useCallback(
+    (nextSessionId: string, replaceUrl = true) => {
+      const trimmed = nextSessionId.trim();
+      if (!trimmed) {
+        return;
+      }
+
+      savePurchaseSessionId(trimmed);
+      setSessionId(trimmed);
+      setError(null);
+
+      if (replaceUrl) {
+        router.replace(`/hackathon?session_id=${encodeURIComponent(trimmed)}`);
+      }
+    },
+    [router],
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function resolveSession() {
+      const candidate = urlSessionId || readPurchaseSessionId();
+      if (!candidate) {
+        if (!cancelled) {
+          setSessionReady(true);
+        }
+        return;
+      }
+
+      const verification = await verifySession(candidate);
+      if (cancelled) {
+        return;
+      }
+
+      if (verification.ok) {
+        activateSession(candidate, !urlSessionId);
+        if (!cancelled) {
+          setSessionReady(true);
+        }
+        return;
+      }
+
+      if (!urlSessionId && readPurchaseSessionId() === candidate) {
+        setError(verification.data.error ?? "Saved purchase session is no longer valid.");
+      }
+
+      if (!cancelled) {
+        setSessionReady(true);
+      }
+    }
+
+    void resolveSession();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [urlSessionId, activateSession]);
+
   const loadAssets = useCallback(async () => {
     if (!sessionId) {
       setError("Purchase session required. Complete checkout to unlock purchased files.");
@@ -71,25 +147,17 @@ export function HackathonConsole() {
     setError(null);
 
     try {
-      const response = await fetch(
-        `/api/hackathon/assets?session_id=${encodeURIComponent(sessionId)}`,
-      );
-      const data = (await response.json()) as {
-        assets?: PromptAsset[];
-        plan?: string;
-        error?: string;
-      };
-
-      if (!response.ok || !data.assets) {
+      const verification = await verifySession(sessionId);
+      if (!verification.ok || !verification.data.assets) {
         setAssets([]);
         setPlan(null);
-        setError(data.error ?? "Unable to load purchased assets.");
+        setError(verification.data.error ?? "Unable to load purchased assets.");
         return;
       }
 
-      setAssets(data.assets);
-      setPlan(data.plan ?? null);
-      setSelectedAsset((current) => current || data.assets?.[0]?.key || "");
+      setAssets(verification.data.assets);
+      setPlan(verification.data.plan ?? null);
+      setSelectedAsset((current) => current || verification.data.assets?.[0]?.key || "");
     } catch {
       setError("Unable to load purchased assets.");
     } finally {
@@ -102,6 +170,31 @@ export function HackathonConsole() {
       void loadAssets();
     }
   }, [sessionId, loadAssets]);
+
+  async function restoreAccess() {
+    const trimmed = restoreInput.trim();
+    if (!trimmed) {
+      setError("Paste your session ID from the success page or purchase email.");
+      return;
+    }
+
+    setRestoreLoading(true);
+    setError(null);
+
+    try {
+      const verification = await verifySession(trimmed);
+      if (!verification.ok) {
+        setError(verification.data.error ?? "Purchase not found or not paid.");
+        return;
+      }
+
+      activateSession(trimmed);
+    } catch {
+      setError("Unable to verify purchase session.");
+    } finally {
+      setRestoreLoading(false);
+    }
+  }
 
   async function loadAssetPreview(key: string) {
     if (!sessionId || !key) {
@@ -217,22 +310,58 @@ export function HackathonConsole() {
     }
   }
 
+  if (!sessionReady) {
+    return (
+      <div className="rounded-2xl border border-white/10 bg-[#0C1730]/70 p-5 text-sm text-slate-300">
+        Checking purchase access...
+      </div>
+    );
+  }
+
   if (!sessionId) {
     return (
-      <div className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-6 text-amber-100">
-        <h2 className="text-xl font-semibold text-white">Purchase Required</h2>
-        <p className="mt-2 text-sm text-amber-100/90">
-          Ops Console only unlocks after a paid checkout. Buy a plan, then open this page from your
-          success receipt.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-3">
-          <Button asChild>
-            <Link href="/#pricing">View Pricing</Link>
-          </Button>
-          <Button asChild variant="secondary">
-            <Link href="/">Back to Home</Link>
+      <div className="space-y-4">
+        <div className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-6 text-amber-100">
+          <h2 className="text-xl font-semibold text-white">Purchase Required</h2>
+          <p className="mt-2 text-sm text-amber-100/90">
+            Ops Console unlocks after a paid checkout. If you already purchased, restore access with
+            your receipt session ID below.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Button asChild>
+              <Link href="/#pricing">View Pricing</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/">Back to Home</Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-[#0C1730]/70 p-5">
+          <h3 className="text-lg font-semibold text-white">Already purchased?</h3>
+          <p className="mt-1 text-sm text-slate-300">
+            Paste the <code className="rounded bg-white/10 px-1">session_id</code> from your success
+            page URL or purchase email. It looks like <code className="rounded bg-white/10 px-1">cs_...</code>.
+          </p>
+          <label className="mt-4 block text-sm text-slate-200">
+            Session ID
+            <input
+              value={restoreInput}
+              onChange={(event) => setRestoreInput(event.target.value)}
+              placeholder="cs_live_..."
+              className="mt-1 w-full rounded-xl border border-white/10 bg-[#081225] p-3 text-sm text-slate-100"
+            />
+          </label>
+          <Button className="mt-3" onClick={restoreAccess} disabled={restoreLoading}>
+            {restoreLoading ? "Verifying..." : "Restore Access"}
           </Button>
         </div>
+
+        {error ? (
+          <div className="rounded-xl border border-rose-400/30 bg-rose-500/10 p-4 text-sm text-rose-200">
+            {error}
+          </div>
+        ) : null}
       </div>
     );
   }
