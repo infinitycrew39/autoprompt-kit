@@ -1,0 +1,1749 @@
+{
+  "runs": [
+    {
+      "id": "run_69ba4b77-24a8-4fd5-b5d7-f20d22b60c97",
+      "objective": "Launch an AI growth sprint that can generate revenue and provision one SaaS tool safely.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 4 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Conduct Market Research for Revenue Opportunities and SaaS Tool Evaluation",
+            "amountCents": 5000,
+            "vendor": "Internal Research Team",
+            "notes": "Use Blueprint 1 to analyze target audience pain points, competitor gaps, and SaaS tools aligned with growth objectives. Prioritize tools with robust security and scalability."
+          },
+          {
+            "type": "spend",
+            "title": "Develop and Execute 14-Day Content Calendar for Lead Generation",
+            "amountCents": 20000,
+            "vendor": "Content Creation Agency",
+            "notes": "Apply Blueprint 2 to design high-conversion content (e.g., LinkedIn posts, email sequences, webinars) promoting AI-driven solutions. Focus on CTAs for free trials or demos."
+          },
+          {
+            "type": "earn",
+            "title": "Generate Revenue Through Targeted Lead Conversion",
+            "amountCents": 500000,
+            "notes": "Monetize content efforts via upsells, subscription sign-ups, or consulting packages. Track ROI of content channels and optimize spend."
+          },
+          {
+            "type": "provision",
+            "title": "Deploy Secure SaaS Tool for Workflow Automation",
+            "amountCents": 30000,
+            "vendor": "SaaS Provider (e.g., HubSpot, Zapier)",
+            "notes": "Use Blueprint 3 to ensure tool reliability: validate integrations, test workflows, and establish rollback protocols. Prioritize GDPR/CCPA compliance."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Conduct Market Research for Revenue Opportunities and SaaS Tool Evaluation",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "spend",
+          "title": "Develop and Execute 14-Day Content Calendar for Lead Generation",
+          "status": "blocked",
+          "amountCents": 20000,
+          "reason": "Action would exceed run budget (20000/5000)."
+        },
+        {
+          "type": "earn",
+          "title": "Generate Revenue Through Targeted Lead Conversion",
+          "status": "executed",
+          "amountCents": 500000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1CmLZTIjKKNHv3aF9gArTYsUsrgjbm3Zx82Lzbc8rzTYqFIBguAFA79nr#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "provision",
+          "title": "Deploy Secure SaaS Tool for Workflow Automation",
+          "status": "blocked",
+          "amountCents": 30000,
+          "reason": "Action would exceed run budget (30000/5000)."
+        }
+      ],
+      "spentCents": 0,
+      "projectedRevenueCents": 500000,
+      "createdAt": "2026-06-28T09:02:24.280Z",
+      "updatedAt": "2026-06-28T09:02:24.280Z"
+    },
+    {
+      "id": "run_51bbcafd-c281-4e4b-8b38-9af85b8c3a0b",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 6 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Research Audience and Offer Viability",
+            "notes": "Use Blueprint 1 to assess target audience pain points, offer competitiveness, and market gaps. Output: Decision memo guiding content and spend allocation."
+          },
+          {
+            "type": "provision",
+            "title": "Deploy Content Creation Infrastructure",
+            "vendor": "Figma, Canva, and CMS Platform",
+            "notes": "Provision design tools and a content management system for rapid asset production."
+          },
+          {
+            "type": "provision",
+            "title": "Implement Lead Tracking and Analytics",
+            "vendor": "HubSpot or Google Analytics",
+            "notes": "Set up tracking pixels, CRM integration, and conversion metrics."
+          },
+          {
+            "type": "spend",
+            "title": "Develop High-Conversion Content Calendar",
+            "amountCents": 60000,
+            "vendor": "Freelance Content Team",
+            "notes": "Create 14-day content plan using Blueprint 2 with hooks, CTAs, and format specs."
+          },
+          {
+            "type": "spend",
+            "title": "Launch Targeted Paid Campaigns",
+            "amountCents": 90000,
+            "vendor": "Meta Ads and Google Ads",
+            "notes": "Allocate budget to test 3 ad variations with retargeting."
+          },
+          {
+            "type": "earn",
+            "title": "Convert Leads to Paid Checkouts",
+            "amountCents": 30000,
+            "notes": "Projected revenue from 3 checkouts at $100 average order value."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Research Audience and Offer Viability",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Deploy Content Creation Infrastructure",
+          "status": "executed",
+          "amountCents": 1000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a144ZRmZ6m8Y7kaQlewLKNWFrVAxCheJ8OAgyzlluqRauqUE0PFjL2r3o9#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_c231e566"
+        },
+        {
+          "type": "provision",
+          "title": "Implement Lead Tracking and Analytics",
+          "status": "executed",
+          "amountCents": 1000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a13D5YQKWYPESfaKoiwdPn4cMbCxfX30mSS75QsjmGfWfFL4lU0Uv8RnHA#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_b3e2282c"
+        },
+        {
+          "type": "spend",
+          "title": "Develop High-Conversion Content Calendar",
+          "status": "blocked",
+          "amountCents": 60000,
+          "reason": "Action would exceed run budget (62000/5000)."
+        },
+        {
+          "type": "spend",
+          "title": "Launch Targeted Paid Campaigns",
+          "status": "blocked",
+          "amountCents": 90000,
+          "reason": "Action would exceed run budget (92000/5000)."
+        },
+        {
+          "type": "earn",
+          "title": "Convert Leads to Paid Checkouts",
+          "status": "executed",
+          "amountCents": 30000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1GwlGAtLGYVF4WYQeOJ8bEKlnUv4IKRBHYdhr42Q6apeKGlGLIs3883Ik#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        }
+      ],
+      "spentCents": 2000,
+      "projectedRevenueCents": 30000,
+      "createdAt": "2026-06-27T16:32:47.975Z",
+      "updatedAt": "2026-06-27T16:32:47.975Z"
+    },
+    {
+      "id": "run_a7ade72a-dcf2-4856-a831-75a061f680a3",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 4 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Conduct Market Research and Strategy Planning",
+            "notes": "Use Blueprint 1 (Research to Decision Memo) to analyze target audience, competitors, and conversion pathways. Output: Data-driven recommendations for lead generation and checkout optimization."
+          },
+          {
+            "type": "earn",
+            "title": "Develop and Deploy Lead-Generating Content Calendar",
+            "notes": "Use Blueprint 2 (Idea to Content Calendar) to create a 7-day content plan with hooks, CTAs, and asset formats (e.g., LinkedIn posts, email sequences) tailored to the target audience.",
+            "amountCents": 0
+          },
+          {
+            "type": "spend",
+            "title": "Allocate Budget for Targeted Ads and Lead Magnets",
+            "vendor": "Meta Ads & Google Ads",
+            "amountCents": 50000,
+            "notes": "Spend $500 on paid social ads and landing page promotions to drive traffic and conversions."
+          },
+          {
+            "type": "provision",
+            "title": "Set Up CRM and Analytics Tools for Lead Tracking",
+            "vendor": "HubSpot CRM & Google Analytics",
+            "notes": "Provision tools to monitor lead quality, track user journeys, and attribute checkouts to specific campaigns."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Conduct Market Research and Strategy Planning",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Develop and Deploy Lead-Generating Content Calendar",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1SfJxzjlqOq3YqPbLdfTlivFeV1NUwdGsXkyHoKpNbLdHmwXuLRc9gjId#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Allocate Budget for Targeted Ads and Lead Magnets",
+          "status": "blocked",
+          "amountCents": 50000,
+          "reason": "Action would exceed run budget (50000/5000)."
+        },
+        {
+          "type": "provision",
+          "title": "Set Up CRM and Analytics Tools for Lead Tracking",
+          "status": "executed",
+          "amountCents": 1000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a17oDSLhGHOgOfYXOlXpHWM1DIhNhdDjhYzbXh14J1QWOIf6rUeiQT4ZyH#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_53018acd"
+        }
+      ],
+      "spentCents": 1000,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T16:24:22.513Z",
+      "updatedAt": "2026-06-27T16:24:22.513Z"
+    },
+    {
+      "id": "run_910a61a1-64ab-47d4-a8b9-db76511f316d",
+      "objective": "Launch one revenue offer and provision one SaaS workspace with strict budget controls.\n\nPurchased prompt asset: Starter Prompt Pack\n\nUse this context when planning execution:\n\n# Starter Prompt Pack Bundle\n\n## 1) Business Operator Prompt\nYou are my business operator.\nGoal: <GOAL>\nConstraints: <CONSTRAINTS>\nCurrent state: <CURRENT_STATE>\nReturn:\n1. Top 3 priorities this week\n2. Expected impact per priority\n3. First action to take today\n4. One metric to track\n\n## 2) Research Agent Prompt\nYou are a research agent.\nQuestion: <QUESTION>\nScope: <SCOPE>\nReturn:\n- Summary in 5 bullets\n- Contradictory evidence\n- Sources list\n- What is still unknown\n\n## 3) Content Operator Prompt\nYou are a conversion-focused content strategist.\nAudience: <AUDIENCE>\nOffer: <OFFER>\nCreate 10 content ideas with:\n- Hook\n- Core message\n- CTA\n- Platform fit\n\n## 4) Coding Agent Prompt\nYou are a senior coding agent.\nTask: <TASK>\nCodebase notes: <NOTES>\nReturn:\n1. Implementation plan\n2. Code changes summary\n3. Edge cases\n4. Tests to add\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 4 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Validate market need for revenue offer",
+            "vendor": "Internal Research Team",
+            "notes": "Use Research Agent Prompt to identify customer pain points and demand signals."
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace with budget controls",
+            "amountCents": 50000,
+            "vendor": "SaaS Provider (e.g., AWS/Azure)",
+            "notes": "Set up workspace with usage limits, cost alerts, and access controls."
+          },
+          {
+            "type": "earn",
+            "title": "Launch revenue offer using Content Operator",
+            "vendor": "Internal Team",
+            "notes": "Develop and deploy 10 conversion-focused content ideas to drive offer signups."
+          },
+          {
+            "type": "spend",
+            "title": "Allocate budget for content creation tools",
+            "amountCents": 100000,
+            "vendor": "Content Tools (e.g., Canva, Grammarly)",
+            "notes": "Fund resources for high-quality content production aligned with offer messaging."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Validate market need for revenue offer",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace with budget controls",
+          "status": "blocked",
+          "amountCents": 50000,
+          "reason": "Action would exceed run budget (50000/5000)."
+        },
+        {
+          "type": "earn",
+          "title": "Launch revenue offer using Content Operator",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1x2Azno8AeZLw9MtefsyzMRZPgu3pfS1Nb0XlU8cRnK3sEF8eyRHr2gJY#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Allocate budget for content creation tools",
+          "status": "blocked",
+          "amountCents": 100000,
+          "reason": "Action would exceed run budget (100000/5000)."
+        }
+      ],
+      "spentCents": 0,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T16:15:55.830Z",
+      "updatedAt": "2026-06-27T16:15:55.830Z"
+    },
+    {
+      "id": "run_a3966d21-bd91-4b26-a6ce-d9f37b8d54db",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Starter Prompt Pack\n\nUse this context when planning execution:\n\n# Starter Prompt Pack Bundle\n\n## 1) Business Operator Prompt\nYou are my business operator.\nGoal: <GOAL>\nConstraints: <CONSTRAINTS>\nCurrent state: <CURRENT_STATE>\nReturn:\n1. Top 3 priorities this week\n2. Expected impact per priority\n3. First action to take today\n4. One metric to track\n\n## 2) Research Agent Prompt\nYou are a research agent.\nQuestion: <QUESTION>\nScope: <SCOPE>\nReturn:\n- Summary in 5 bullets\n- Contradictory evidence\n- Sources list\n- What is still unknown\n\n## 3) Content Operator Prompt\nYou are a conversion-focused content strategist.\nAudience: <AUDIENCE>\nOffer: <OFFER>\nCreate 10 content ideas with:\n- Hook\n- Core message\n- CTA\n- Platform fit\n\n## 4) Coding Agent Prompt\nYou are a senior coding agent.\nTask: <TASK>\nCodebase notes: <NOTES>\nReturn:\n1. Implementation plan\n2. Code changes summary\n3. Edge cases\n4. Tests to add\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 4 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Market & Audience Research",
+            "notes": "Use Research Agent Prompt to identify target audience pain points, competitor offers, and high-intent platforms.",
+            "amountCents": 0
+          },
+          {
+            "type": "provision",
+            "title": "Landing Page Setup",
+            "vendor": "Webflow",
+            "notes": "Use Coding Agent Prompt to deploy a conversion-optimized landing page with lead capture and checkout integration.",
+            "amountCents": 5000
+          },
+          {
+            "type": "spend",
+            "title": "Paid Ads Campaign",
+            "vendor": "Meta Ads",
+            "notes": "Allocate budget for targeted ads promoting lead magnet from Content Operator's ideas.",
+            "amountCents": 150000
+          },
+          {
+            "type": "earn",
+            "title": "Checkout Conversion Tracking",
+            "notes": "Implement tracking via Coding Agent to measure paid checkout conversions and optimize funnel.",
+            "amountCents": 3000
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Market & Audience Research",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Landing Page Setup",
+          "status": "executed",
+          "amountCents": 5000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1SwQa6PBXQLqnGmdP2beH0cRDbuq7vaUm69MPGxuNQ5knjJFlDceiLG1z#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_d6fd7ad3"
+        },
+        {
+          "type": "spend",
+          "title": "Paid Ads Campaign",
+          "status": "blocked",
+          "amountCents": 150000,
+          "reason": "Action would exceed run budget (155000/5000)."
+        },
+        {
+          "type": "earn",
+          "title": "Checkout Conversion Tracking",
+          "status": "executed",
+          "amountCents": 3000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1VfRiKdMNcYzWLziAhEdfYw62HM9ECYnHR1ccESvIllcWBNgrYigDoETX#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        }
+      ],
+      "spentCents": 5000,
+      "projectedRevenueCents": 3000,
+      "createdAt": "2026-06-27T16:14:56.474Z",
+      "updatedAt": "2026-06-27T16:14:56.474Z"
+    },
+    {
+      "id": "run_dd596351-4f80-403a-bc33-c5585c440c97",
+      "objective": "Launch one revenue offer and provision one SaaS workspace with strict budget controls.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 3 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Develop 14-day content plan for revenue offer launch",
+            "notes": "Use Blueprint 2: Idea to Content Calendar to design high-conversion content with hooks, post angles, CTAs, and asset formats tailored to the target audience."
+          },
+          {
+            "type": "analyze",
+            "title": "Evaluate SaaS workspace options with budget constraints",
+            "notes": "Use Blueprint 1: Research to Decision Memo to assess SaaS providers, cost structures, and alignment with budget controls. Include risks and confidence score."
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace with budget safeguards",
+            "amountCents": 50000,
+            "vendor": "Example SaaS Platform",
+            "notes": "Allocate $500/month budget, enforce usage limits, and integrate monitoring tools to prevent overages."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Develop 14-day content plan for revenue offer launch",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "analyze",
+          "title": "Evaluate SaaS workspace options with budget constraints",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace with budget safeguards",
+          "status": "blocked",
+          "amountCents": 50000,
+          "reason": "Action would exceed run budget (50000/5000)."
+        }
+      ],
+      "spentCents": 0,
+      "projectedRevenueCents": 0,
+      "createdAt": "2026-06-27T16:14:51.717Z",
+      "updatedAt": "2026-06-27T16:14:51.717Z"
+    },
+    {
+      "id": "run_cdd868ba-a1fb-4e23-8a83-5e3ed8d6eb15",
+      "objective": "Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Starter Prompt Pack\n\nUse this context when planning execution:\n\n# Starter Prompt Pack Bundle\n\n## 1) Business Operator Prompt\nYou are my business operator.\nGoal: <GOAL>\nConstraints: <CONSTRAINTS>\nCurrent state: <CURRENT_STATE>\nReturn:\n1. Top 3 priorities this week\n2. Expected impact per priority\n3. First action to take today\n4. One metric to track\n\n## 2) Research Agent Prompt\nYou are a research agent.\nQuestion: <QUESTION>\nScope: <SCOPE>\nReturn:\n- Summary in 5 bullets\n- Contradictory evidence\n- Sources list\n- What is still unknown\n\n## 3) Content Operator Prompt\nYou are a conversion-focused content strategist.\nAudience: <AUDIENCE>\nOffer: <OFFER>\nCreate 10 content ideas with:\n- Hook\n- Core message\n- CTA\n- Platform fit\n\n## 4) Coding Agent Prompt\nYou are a senior coding agent.\nTask: <TASK>\nCodebase notes: <NOTES>\nReturn:\n1. Implementation plan\n2. Code changes summary\n3. Edge cases\n4. Tests to add\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 5 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze top priorities and first action using Business Operator Prompt",
+            "notes": "Define weekly priorities and immediate next step aligned with growth goals."
+          },
+          {
+            "type": "analyze",
+            "title": "Conduct market research and competitor analysis using Research Agent Prompt",
+            "notes": "Identify audience pain points, competitor gaps, and validation for content strategy."
+          },
+          {
+            "type": "analyze",
+            "title": "Generate 10 conversion-focused content ideas using Content Operator Prompt",
+            "notes": "Create hooks, CTAs, and platform-specific content to drive lead generation."
+          },
+          {
+            "type": "provision",
+            "title": "Provision Zapier integration for automated lead capture",
+            "amountCents": 2000,
+            "vendor": "Zapier",
+            "notes": "Enable automated workflows for lead collection and nurturing."
+          },
+          {
+            "type": "spend",
+            "title": "Run targeted ads on Google and LinkedIn using content themes",
+            "amountCents": 3000,
+            "vendor": "Google Ads, LinkedIn Ads",
+            "notes": "Allocate budget to high-performing platforms based on research insights."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze top priorities and first action using Business Operator Prompt",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "analyze",
+          "title": "Conduct market research and competitor analysis using Research Agent Prompt",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "analyze",
+          "title": "Generate 10 conversion-focused content ideas using Content Operator Prompt",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Provision Zapier integration for automated lead capture",
+          "status": "executed",
+          "amountCents": 2000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1FXZhtYyOxLAL7fXUgqiV17ChDJJQHbE480xDgCi5z07DTLAM5Mr2kfFD#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_d8df6a2b"
+        },
+        {
+          "type": "spend",
+          "title": "Run targeted ads on Google and LinkedIn using content themes",
+          "status": "executed",
+          "amountCents": 3000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1YqqChJga07mbFPSdABCtkPThZklskPKmdZGw4yRrOPEKahwpeuc3r3gi#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        }
+      ],
+      "spentCents": 5000,
+      "projectedRevenueCents": 0,
+      "createdAt": "2026-06-27T16:13:40.217Z",
+      "updatedAt": "2026-06-27T16:13:40.217Z"
+    },
+    {
+      "id": "run_a56eaf79-c79a-4a84-bb79-be72abbed886",
+      "objective": "Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 4 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Market and Audience Research Analysis",
+            "notes": "Use Blueprint 1 (Research to Decision Memo) to identify target audience pain points, market gaps, and conversion drivers for AutoPrompt Kit."
+          },
+          {
+            "type": "earn",
+            "title": "Create 14-Day Conversion-Focused Content Calendar",
+            "notes": "Use Blueprint 2 (Idea to Content Calendar) to design a content plan with hooks, post angles, and CTAs tailored to the identified audience."
+          },
+          {
+            "type": "provision",
+            "title": "Provision Google Analytics for Lead Tracking",
+            "vendor": "Google",
+            "notes": "Set up analytics to monitor campaign performance, track user behavior, and attribute leads to specific content or ad efforts."
+          },
+          {
+            "type": "spend",
+            "title": "Run Targeted Social Media Ads",
+            "amountCents": 5000,
+            "vendor": "Meta Platforms (Facebook/Instagram)",
+            "notes": "Allocate full budget to run hyper-targeted ads promoting AutoPrompt Kit, leveraging content calendar assets for ad creatives."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Market and Audience Research Analysis",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Create 14-Day Conversion-Focused Content Calendar",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1BkmY8G9p66Wr9gINjz7Ng8WUQziwEXdh8q1eT6N3sMIwUTNMKka6QSle#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision Google Analytics for Lead Tracking",
+          "status": "executed",
+          "amountCents": 1000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a11LzhzAJInZ7B3LvBU076SVQLrxU8J1cPZpb4ZKzEmpCpej3ko4RBLW2e#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_01da21a9"
+        },
+        {
+          "type": "spend",
+          "title": "Run Targeted Social Media Ads",
+          "status": "blocked",
+          "amountCents": 5000,
+          "reason": "Action would exceed run budget (6000/5000)."
+        }
+      ],
+      "spentCents": 1000,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T16:12:53.127Z",
+      "updatedAt": "2026-06-27T16:12:53.127Z"
+    },
+    {
+      "id": "run_05c6211e-d01c-428e-8a7b-00d975a78949",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 5 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Conduct market and audience research",
+            "amountCents": 5000,
+            "vendor": "Data analytics tools",
+            "notes": "Use Blueprint 1 to identify target audience pain points, competitor gaps, and high-intent channels. Output informs content and ad strategies."
+          },
+          {
+            "type": "provision",
+            "title": "Setup CRM and conversion tracking",
+            "amountCents": 3000,
+            "vendor": "HubSpot",
+            "notes": "Deploy CRM for lead management and analytics tools for tracking campaign performance (Blueprint 3). Ensures data-driven decision-making."
+          },
+          {
+            "type": "spend",
+            "title": "Develop 14-day content calendar",
+            "amountCents": 10000,
+            "vendor": "Freelance content team",
+            "notes": "Create high-conversion hooks, CTAs, and asset formats (Blueprint 2) aligned with research findings. Focus on lead magnets and checkout funnel support."
+          },
+          {
+            "type": "spend",
+            "title": "Run targeted social media ads",
+            "amountCents": 7000,
+            "vendor": "Meta Ads",
+            "notes": "Allocate budget to platforms identified in research. Retarget engaged users and drive traffic to optimized checkout flow."
+          },
+          {
+            "type": "earn",
+            "title": "Optimize checkout conversion rate",
+            "notes": "Implement friction-reduction tactics (e.g., one-click payment, trust badges) based on research insights. Directly tied to achieving 3 paid checkouts."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Conduct market and audience research",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "provision",
+          "title": "Setup CRM and conversion tracking",
+          "status": "executed",
+          "amountCents": 3000,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a142AHv8ZEPIW7F1KzXxc2zynZ5jskpp2ULSjK5GmOcdvNmiI6dIyLpoE3#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_13a88aa2"
+        },
+        {
+          "type": "spend",
+          "title": "Develop 14-day content calendar",
+          "status": "blocked",
+          "amountCents": 10000,
+          "reason": "Action would exceed run budget (13000/5000)."
+        },
+        {
+          "type": "spend",
+          "title": "Run targeted social media ads",
+          "status": "blocked",
+          "amountCents": 7000,
+          "reason": "Action would exceed run budget (10000/5000)."
+        },
+        {
+          "type": "earn",
+          "title": "Optimize checkout conversion rate",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1V6CHeoR6tjqmGKygJj8FvDBOwrjcGLHApfAE9mTJEaB4iPuFxs0hPFyH#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        }
+      ],
+      "spentCents": 3000,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T16:11:43.732Z",
+      "updatedAt": "2026-06-27T16:11:43.732Z"
+    },
+    {
+      "id": "run_c6657f35-2fb7-4de9-8718-bb2cb53a5c22",
+      "objective": "Nemotron provider verification\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed_with_blocks",
+      "plan": {
+        "provider": "nemotron",
+        "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "summary": "Nemotron planned 3 actions for autonomous business operations.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Research Provider Credentials and Compliance",
+            "amountCents": 50000,
+            "vendor": "Third-Party Audit Service",
+            "notes": "Assess Nemotron's security certifications, incident history, and contractual obligations to validate reliability."
+          },
+          {
+            "type": "spend",
+            "title": "Develop 14-Day Content Plan for Provider Verification",
+            "amountCents": 30000,
+            "vendor": "Content Creation Platform",
+            "notes": "Create educational posts, FAQs, and CTAs to inform stakeholders about the verification process and benefits."
+          },
+          {
+            "type": "provision",
+            "title": "Deploy Tools for Bug Fix Validation and Monitoring",
+            "amountCents": 75000,
+            "vendor": "DevOps Toolchain Provider",
+            "notes": "Provision testing environments, CI/CD pipelines, and monitoring systems to ensure bug fixes meet safety standards."
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Research Provider Credentials and Compliance",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "spend",
+          "title": "Develop 14-Day Content Plan for Provider Verification",
+          "status": "blocked",
+          "amountCents": 30000,
+          "reason": "Action would exceed run budget (30000/5000)."
+        },
+        {
+          "type": "provision",
+          "title": "Deploy Tools for Bug Fix Validation and Monitoring",
+          "status": "blocked",
+          "amountCents": 75000,
+          "reason": "Action would exceed run budget (75000/5000)."
+        }
+      ],
+      "spentCents": 0,
+      "projectedRevenueCents": 0,
+      "createdAt": "2026-06-27T16:07:46.201Z",
+      "updatedAt": "2026-06-27T16:07:46.201Z"
+    },
+    {
+      "id": "run_015967b0-9891-4064-af00-955813cd3c3f",
+      "objective": "Nemotron provider verification\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1nxLhRU4fNU5KLmQc6uCpBChOeBZn3RXmjxav9pCxrNUMky5dugAKM8YD#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a11qHe9metIQL8PycrIRM5LcHIaqpCrwrH8VbX8FSWaDtxW1EMuN62SvwG#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1367v3JfB7unZih0fZ5qVJblK9QJpViK2uSeCoOLMyZCALDjdDNY2HMsY#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_ca55d103"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T16:00:03.623Z",
+      "updatedAt": "2026-06-27T16:00:03.624Z"
+    },
+    {
+      "id": "run_ff2ebb80-1bc0-4905-a568-8501189e1e46",
+      "objective": "Nemotron provider smoke test\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1oTsG58uICJKdX2VIAJXyvusOUaHKUv3P0vKMdcM9qffdanlElTlhlCRI#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1bzRvnuOa5HoVqdugdfngvqd7m9GR7cb5qmsZIpthA74I9w4asXZwijf1#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1E04ydnxCl8DbBGVwPg46CxXLp54exwCiCMxElNuj1ZgQh6mfDlTIHEGH#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_1885f194"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:39:37.706Z",
+      "updatedAt": "2026-06-27T15:39:37.706Z"
+    },
+    {
+      "id": "run_1cae3ef3-c03c-4a43-ad20-e9d93e690ae3",
+      "objective": "Launch one revenue offer and provision one SaaS workspace with strict budget controls.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1vBCao0mY1LTWg30eqo1jgLYUeRHIAv1nR3ln0Cvos1Cf6DE2cAeABhO2#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1X1PfThbj7lAHLidhaqn0Z5rpmOAUNvfen1pPU2liOb5DW1FaBG2pEUQM#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1hMUooLq7JAGdRK3ZRoFLQmovxABhCePYOZOtH9d4sSeRS3XVmpbxis9i#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_7e03ce26"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:34:34.249Z",
+      "updatedAt": "2026-06-27T15:34:34.249Z"
+    },
+    {
+      "id": "run_b472d75b-7318-4aed-b617-12833c701bb6",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1H1oXj6ZK39gOG5DCzHTQVLzYVWdQJARFPHm6GZR23cJgFuStn76SEYm6#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1zzEcLAUUZRPaL4UGlFh9Br1vg3nMr4VlfNhTCQIDtwugbCjfLjKRZFpz#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1y1EHKMcTmg9uTzIluHMTGOcQTAjWcu8q0p48Y7gF1QYn9pkBvScTQHy0#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_998c4fd0"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:34:32.845Z",
+      "updatedAt": "2026-06-27T15:34:32.845Z"
+    },
+    {
+      "id": "run_d8fe1b14-9963-4dc6-a3b9-324c8b998750",
+      "objective": "Launch one revenue offer and provision one SaaS workspace with strict budget controls.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1yU4GREyHKVqv6UXmso5QDoztiHOFkkYQalK3NxDnuzWb1DFtqXuqT07T#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1UGkIMndPySfC0EMKwHOZIXaCb8BIVI2DtmP5PNpba4oCmMpDEbzfcnLp#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1x3IFKdq4qzuaLgs0EcFeecpqcAzBZ0OkDuddJCtOnMmPzmBfbxd3gd8f#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_141f7ea9"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:29:34.420Z",
+      "updatedAt": "2026-06-27T15:29:34.420Z"
+    },
+    {
+      "id": "run_d1bf438c-77af-4bb8-8c3c-a42597e3558e",
+      "objective": "Run a 7-day autonomous growth sprint to generate qualified leads and 3 paid checkouts.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1oKRwFFUw9JZOvqhgpC9ddkX1bfHyAwONwuBL9zNQyX84RROuJTbAK9X8#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1FY3WRIdwRWTlU3yocUI5IPPkgM0OZmA7gNVuDisS4JwTivkqZtCSza0R#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1K4lWdNvoCbdW3T0c5sHuy4J2WoaI1yKMQNNvQTeHIMXslW3e9JmuZJnC#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_2220615a"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:29:33.003Z",
+      "updatedAt": "2026-06-27T15:29:33.003Z"
+    },
+    {
+      "id": "run_ff06c7e4-0280-421b-a303-9577cef389e2",
+      "objective": "Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1hc3oXD4fdAvwMIyBgBP312rILOLxQYhDrNGhoLEfq0O83NJyhvoo92TY#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1u0VJR0O33E8O3H6bGVqLsr9H5ghZoX9vrDYLZ44E6JsgHns6PIAVgd5S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a16DOsj7siTbP0NFuKHeXrNWIbajW10FYywjqbRbOfVt6UoTUPWXH8otYx#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_6e7513bc"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:28:18.290Z",
+      "updatedAt": "2026-06-27T15:28:18.290Z"
+    },
+    {
+      "id": "run_b9670e02-9c7e-4848-84de-2e9a3a0e52fe",
+      "objective": "Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1VIJhvUSOaNL3bwnfASnD24yRu6om3xwpDyDguLZ4oc5J5DxBLDFYKb74#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a17m16kf2lWWcFpU6kHfS8BHUsQKye1WuPXZrxJwIvd4xr8CDUq5zwH0tR#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1m3M3Vc20zwNOZ1D8OX8DvYRTWoipsAt4cjoLaUBiwIi07XyUXS0mTOO8#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_313fe0d9"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:25:44.248Z",
+      "updatedAt": "2026-06-27T15:25:44.248Z"
+    },
+    {
+      "id": "run_d5d1a846-77f0-4c07-bdcd-fded0decd8b7",
+      "objective": "Hackathon ROI check\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1kAuuxtaU9WgITKsRHCNzJtst4cw22XUqashHDwmIfzqBUciANcDIwKdw#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1AMdGxBSTlBc2YWvEo6MGzron6zpkD5wZUtCMSjQGB8yORguHmTwckkYD#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1OFbA4oWuwh3t2gFktsQ46Xl4bzYkuSD9uBCjMhnHM36cpHDtc0BH37rI#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_f409a533"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:24:48.241Z",
+      "updatedAt": "2026-06-27T15:24:48.241Z"
+    },
+    {
+      "id": "run_d5651bd4-2a9c-4697-a7ee-24bd51dba902",
+      "objective": "Hackathon ROI check\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planner generated a safe 4-step business ops run.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 3500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 3500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1fgH6M5QgTX9L9DmvHZSdtCDAyUFg8nji1cuoTqFwq5caig66ZiqEuDph#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a16VPJeJWbuqkRLUWQrbW9j4FCBvpSVxcpXFwohKrNquJCBH2wnUkmLsZV#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1xTz96A4Lc3HvT75FyEMA5bOqbBOniykpm8v1vdrAMP6Hun5WETgUjewf#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_7afe6c66"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 3500,
+      "createdAt": "2026-06-27T15:24:33.950Z",
+      "updatedAt": "2026-06-27T15:24:33.950Z"
+    },
+    {
+      "id": "run_a701a08a-8245-4a84-a5f8-77479fb4b532",
+      "objective": "Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planning for objective: Run a 7-day autonomous growth sprint for AutoPrompt Kit to generate 15 qualified leads and 3 paid checkouts, with a maximum spend of 5000 cents and one SaaS provisioning step.\n\nPurchased prompt asset: Workflow Blueprints\n\nUse this context when planning execution:\n\n# Agent Workflow Blueprints\n\n## Blueprint 1: Research to Decision Memo\n\n### System Prompt\nYou are a research strategist. Produce evidence-backed recommendations with explicit uncertainty.\n\n### User Prompt\nGoal: <GOAL>\nContext: <CONTEXT>\nSources: <INPUT_DATA>\nOutput format:\n1. Key findings\n2. Tradeoffs\n3. Recommendation\n4. Risks\n5. Confidence score (0-100)\n\n## Blueprint 2: Idea to Content Calendar\n\n### System Prompt\nYou are a content operator focused on conversion and clarity.\n\n### User Prompt\nBusiness: <CONTEXT>\nAudience: <TARGET_AUDIENCE>\nOffer: <OFFER>\nCreate a 14-day content plan with:\n- Hook\n- Post angle\n- CTA\n- Suggested asset format\n\n## Blueprint 3: Bug Report to Fix Plan\n\n### System Prompt\nYou are a senior software engineer. Prioritize reliability and minimal-risk changes.\n\n### User Prompt\nIssue: <BUG_REPORT>\nCode context: <CODE_CONTEXT>\nProduce:\n1. Root cause hypotheses\n2. Fastest safe fix\n3. Regression tests\n4. Rollback plan\n",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 1500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 1500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1JkGjyiGohtlUur4EmUe9eoKSujFb4jlKqeLrPkbEOltjQi8CNy1zw45p#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1Cle7Dw09dKzKOePCdDrW3v6vhLdiZOOL54pqtmEUjBWhrZD1a2XUGMg0#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1RsgGtmNpqdDN4fFs6znzk70B8HZ7Ew1PVm81g0VDJp4U8Xe5pNe6PtVY#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_4d4fc5c3"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 1500,
+      "createdAt": "2026-06-27T15:22:09.645Z",
+      "updatedAt": "2026-06-27T15:22:09.645Z"
+    },
+    {
+      "id": "run_96092467-7b47-46e8-b690-2ab01d5ef20e",
+      "objective": "Use purchased file to plan a weekly operations sprint\n\nPurchased prompt asset: Starter Prompt Pack\n\nUse this context when planning execution:\n\n# Starter Prompt Pack Bundle\n\n## 1) Business Operator Prompt\nYou are my business operator.\nGoal: <GOAL>\nConstraints: <CONSTRAINTS>\nCurrent state: <CURRENT_STATE>\nReturn:\n1. Top 3 priorities this week\n2. Expected impact per priority\n3. First action to take today\n4. One metric to track\n\n## 2) Research Agent Prompt\nYou are a research agent.\nQuestion: <QUESTION>\nScope: <SCOPE>\nReturn:\n- Summary in 5 bullets\n- Contradictory evidence\n- Sources list\n- What is still unknown\n\n## 3) Content Operator Prompt\nYou are a conversion-focused content strategist.\nAudience: <AUDIENCE>\nOffer: <OFFER>\nCreate 10 content ideas with:\n- Hook\n- Core message\n- CTA\n- Platform fit\n\n## 4) Coding Agent Prompt\nYou are a senior coding agent.\nTask: <TASK>\nCodebase notes: <NOTES>\nReturn:\n1. Implementation plan\n2. Code changes summary\n3. Edge cases\n4. Tests to add\n",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planning for objective: Use purchased file to plan a weekly operations sprint\n\nPurchased prompt asset: Starter Prompt Pack\n\nUse this context when planning execution:\n\n# Starter Prompt Pack Bundle\n\n## 1) Business Operator Prompt\nYou are my business operator.\nGoal: <GOAL>\nConstraints: <CONSTRAINTS>\nCurrent state: <CURRENT_STATE>\nReturn:\n1. Top 3 priorities this week\n2. Expected impact per priority\n3. First action to take today\n4. One metric to track\n\n## 2) Research Agent Prompt\nYou are a research agent.\nQuestion: <QUESTION>\nScope: <SCOPE>\nReturn:\n- Summary in 5 bullets\n- Contradictory evidence\n- Sources list\n- What is still unknown\n\n## 3) Content Operator Prompt\nYou are a conversion-focused content strategist.\nAudience: <AUDIENCE>\nOffer: <OFFER>\nCreate 10 content ideas with:\n- Hook\n- Core message\n- CTA\n- Platform fit\n\n## 4) Coding Agent Prompt\nYou are a senior coding agent.\nTask: <TASK>\nCodebase notes: <NOTES>\nReturn:\n1. Implementation plan\n2. Code changes summary\n3. Edge cases\n4. Tests to add\n",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 1500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 1500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1S2EO1noSrQovZaWbj46oslGpUXanUo9UykWPlKYgoFSK4hS5igpaf4gO#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1Ybfz47d0SzFhDhdB9hQDbdfQjEE3yK3k9dy7XC7KYde9zCAvnpqRZ4Ef#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1fTfkxivhxDYJFVV3Laz5qg3Nxn2YvqsmP7hoFc9VxGaVNIwCSAcKN89a#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_dfecf812"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 1500,
+      "createdAt": "2026-06-27T15:16:53.469Z",
+      "updatedAt": "2026-06-27T15:16:53.469Z"
+    },
+    {
+      "id": "run_51caa8ec-24b9-4d30-8437-effe92d5007c",
+      "objective": "Launch an AI growth sprint that can generate revenue and provision one SaaS tool safely.",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planning for objective: Launch an AI growth sprint that can generate revenue and provision one SaaS tool safely.",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 1500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 1500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b151njdZGEwBzvITwEBY1cASkAM6oHjG8cS2aa3XVmhq500tHYphkbNArO#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1PdCoA4bf2UcuVSNgMzJBtL8ZtYE3VB3mC83mGkxBs2OuajM4FTLru8os#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1BkGt1P76ry0RHPfeGsb4OCG0AcQiZnrDLoBZ85FtaDpik1dDsfOdECvA#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_75e17e99"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 1500,
+      "createdAt": "2026-06-27T15:06:47.316Z",
+      "updatedAt": "2026-06-27T15:06:47.316Z"
+    },
+    {
+      "id": "run_30f99ad9-6bd4-45dd-982b-9e3f88f8021c",
+      "objective": "Launch automated outbound sprint and provision one SaaS tool",
+      "budgetCents": 5000,
+      "origin": "http://localhost:3000",
+      "status": "completed",
+      "plan": {
+        "provider": "fallback",
+        "model": "fallback-planner-v1",
+        "summary": "Fallback planning for objective: Launch automated outbound sprint and provision one SaaS tool",
+        "actions": [
+          {
+            "type": "analyze",
+            "title": "Analyze market and define KPI baseline",
+            "notes": "Create 2-week execution baseline."
+          },
+          {
+            "type": "earn",
+            "title": "Launch a revenue checkout offer",
+            "amountCents": 1500,
+            "notes": "Use Stripe skill to generate payment flow."
+          },
+          {
+            "type": "spend",
+            "title": "Procure one SaaS tool for distribution",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          },
+          {
+            "type": "provision",
+            "title": "Provision SaaS workspace for campaign operations",
+            "amountCents": 900,
+            "vendor": "EmailOps Cloud"
+          }
+        ]
+      },
+      "executedActions": [
+        {
+          "type": "analyze",
+          "title": "Analyze market and define KPI baseline",
+          "status": "executed",
+          "amountCents": 0
+        },
+        {
+          "type": "earn",
+          "title": "Launch a revenue checkout offer",
+          "status": "executed",
+          "amountCents": 1500,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_b1VUl0tB3GDsThHEb7s75ufAlmkwFo9EQLpU7FVgRt7Gfbqnq2FidrzuhF#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+        },
+        {
+          "type": "spend",
+          "title": "Procure one SaaS tool for distribution",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1xIlqSREOaRhtPZiWx6TuR1rn1R1FIR7SS4AAaWI6DupL3TYBq362wSOX#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+        },
+        {
+          "type": "provision",
+          "title": "Provision SaaS workspace for campaign operations",
+          "status": "executed",
+          "amountCents": 900,
+          "checkoutUrl": "https://checkout.stripe.com/c/pay/cs_test_a1weF4cxGiaCVrcqprURmbyQX51UPdYYLsxLwYy2PG6D81L6J7Geyg5AKK#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRRb29GTkdgR2IyYFVNNXNIXGpLaV0zYWtCNl9uSD1CUWpPU3JtUkZfMFBJTEJBXVRyMlJVXTBQQFJjNTU3X0xxVzNDN0BfaTNRNzN%2Famx9czBDaWJqTmw1NXxydXJsSlU8JyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+          "provisionedResourceId": "prov_b153a739"
+        }
+      ],
+      "spentCents": 1800,
+      "projectedRevenueCents": 1500,
+      "createdAt": "2026-06-27T15:02:14.816Z",
+      "updatedAt": "2026-06-27T15:02:14.817Z"
+    }
+  ]
+}
