@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "AutoPrompt Kit 2026";
+export const alt = "AutoPrompt Kit";
 export const size = {
   width: 1200,
   height: 630,
@@ -30,7 +30,7 @@ export default function OpengraphImage() {
           Premium Prompt Packs
         </p>
         <h1 style={{ marginTop: 20, fontSize: 76, lineHeight: 1.05, fontWeight: 700 }}>
-          AutoPrompt Kit 2026
+          AutoPrompt Kit
         </h1>
         <p style={{ marginTop: 24, maxWidth: 880, fontSize: 30, color: "#CBD5E1" }}>
           Unlock the full power of autonomous AI agents.

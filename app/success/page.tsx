@@ -90,7 +90,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
             {isPaid
-              ? `Your access to AutoPrompt Kit 2026 is now active.${planLabel ? ` Plan: ${planLabel}.` : ""}`
+              ? `Your access to AutoPrompt Kit is now active.${planLabel ? ` Plan: ${planLabel}.` : ""}`
               : isDemo
                 ? `This is a demo confirmation for the ${planLabel || "selected"} plan.`
                 : "We are confirming your payment. Refresh this page after checkout completes."}

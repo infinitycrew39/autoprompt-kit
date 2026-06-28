@@ -267,7 +267,7 @@ export const trustedBy = [
   "HyperPrompt",
 ];
 
-export const brandName = "AutoPrompt Kit 2026";
+export const brandName = "AutoPrompt Kit";
 export const heroTitle = "Unlock the Full Power of Autonomous AI Agents";
 export const heroSubtitle =
   "A premium collection of battle-tested Prompt Packs engineered for Hermes, Nemotron, Claude, Cursor, Grok, and the next generation of autonomous systems.";

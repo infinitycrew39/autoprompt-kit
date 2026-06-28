@@ -16,11 +16,11 @@ export function FinalCtaSection() {
               Build Faster. Reason Better. Ship More.
             </h2>
             <p className="relative mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
-              Join builders using AutoPrompt Kit 2026 to run autonomous AI systems with premium-quality prompts and repeatable workflows.
+              Join builders using AutoPrompt Kit to run autonomous AI systems with premium-quality prompts and repeatable workflows.
             </p>
             <Button asChild size="lg" className="relative mt-8">
               <a href="#pricing" className="group">
-                Get AutoPrompt Kit 2026
+                Get AutoPrompt Kit
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>

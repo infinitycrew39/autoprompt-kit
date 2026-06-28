@@ -9,7 +9,7 @@ export type SecuredDownloadItem = {
 };
 
 const DOWNLOAD_LABELS: Record<string, string> = {
-  "master-index": "AutoPrompt Kit 2026 - Master Index.md",
+  "master-index": "AutoPrompt Kit - Master Index.md",
   "workflow-blueprints": "Agent Workflow Blueprints.md",
   "starter-pack": "Starter Prompt Pack Bundle.md",
   "starter-qa": "Prompt QA Checklist.md",

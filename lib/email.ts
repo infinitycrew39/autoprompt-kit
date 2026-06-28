@@ -26,7 +26,7 @@ function buildHtml(plan: PlanId, downloads: SecuredDownloadItem[], sessionId: st
 
   return `
     <div style="font-family:Arial,sans-serif;line-height:1.6;color:#0f172a;">
-      <h2 style="margin-bottom:8px;">Your AutoPrompt Kit 2026 Access Is Ready</h2>
+      <h2 style="margin-bottom:8px;">Your AutoPrompt Kit Access Is Ready</h2>
       <p>Thanks for purchasing the <strong>${planLabel(plan)}</strong> plan.</p>
       <p>Download your files below:</p>
       <ul>${items}</ul>
@@ -62,7 +62,7 @@ export async function sendDeliveryEmail({
       body: JSON.stringify({
         from: fromAddress,
         to: targetEmail,
-        subject: `Your AutoPrompt Kit 2026 (${planLabel(plan)}) downloads`,
+        subject: `Your AutoPrompt Kit (${planLabel(plan)}) downloads`,
         html: buildHtml(plan, downloads, sessionId, origin),
       }),
     });

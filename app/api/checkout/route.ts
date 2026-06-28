@@ -9,17 +9,17 @@ const planConfig: Record<
 > = {
   starter: {
     amount: 4900,
-    title: "AutoPrompt Kit 2026 - Starter",
+    title: "AutoPrompt Kit - Starter",
     priceEnv: "STRIPE_PRICE_STARTER",
   },
   professional: {
     amount: 9900,
-    title: "AutoPrompt Kit 2026 - Professional",
+    title: "AutoPrompt Kit - Professional",
     priceEnv: "STRIPE_PRICE_PROFESSIONAL",
   },
   ultimate: {
     amount: 19900,
-    title: "AutoPrompt Kit 2026 - Ultimate",
+    title: "AutoPrompt Kit - Ultimate",
     priceEnv: "STRIPE_PRICE_ULTIMATE",
   },
 };

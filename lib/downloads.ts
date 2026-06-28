@@ -13,7 +13,7 @@ function envOrFallback(value: string | undefined, fallback = "#") {
 
 const commonDownloads: DownloadItem[] = [
   {
-    name: "AutoPrompt Kit 2026 - Master Index.md",
+    name: "AutoPrompt Kit - Master Index.md",
     href: envOrFallback(process.env.DOWNLOAD_URL_MASTER_INDEX, "/downloads/master-index.md"),
   },
   {

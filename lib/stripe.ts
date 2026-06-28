@@ -13,7 +13,7 @@ export function getStripeServerClient() {
     stripeClient = new Stripe(secretKey, {
       apiVersion: "2026-05-27.dahlia",
       appInfo: {
-        name: "AutoPrompt Kit 2026",
+        name: "AutoPrompt Kit",
       },
     });
   }

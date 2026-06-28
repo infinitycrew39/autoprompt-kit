@@ -16,7 +16,7 @@ export function SolutionSection() {
         <Reveal>
           <SectionTitle
             eyebrow="The Solution"
-            title="Meet AutoPrompt Kit 2026"
+            title="Meet AutoPrompt Kit"
             description="A premium, production-ready prompt operating system that upgrades how autonomous AI agents plan, reason, and execute."
           />
         </Reveal>
