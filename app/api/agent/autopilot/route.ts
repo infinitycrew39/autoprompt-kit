@@ -3,6 +3,9 @@ import { NextResponse } from "next/server";
 import { runAutopilotBatch } from "@/lib/autopilot";
 import { verifyPaidPurchase } from "@/lib/purchase-access";
 
+export const maxDuration = 60;
+export const dynamic = "force-dynamic";
+
 type AutopilotBody = {
   budgetCents?: number;
   promptAssetKey?: string;

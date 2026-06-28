@@ -4,6 +4,9 @@ import { canAccessAssetKey } from "@/lib/prompt-assets";
 import { verifyPaidPurchase } from "@/lib/purchase-access";
 import { NextResponse } from "next/server";
 
+export const maxDuration = 60;
+export const dynamic = "force-dynamic";
+
 type RunBody = {
   objective?: string;
   budgetCents?: number;

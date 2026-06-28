@@ -280,11 +280,11 @@ export function HackathonConsole() {
           budgetCents,
           promptAssetKey: selectedAsset,
           sessionId,
-          limit: 2,
+          limit: 1,
         }),
       });
 
-      const data = (await response.json()) as
+      let data:
         | {
             result?: {
               count: number;
@@ -297,8 +297,26 @@ export function HackathonConsole() {
           }
         | { error: string };
 
+      try {
+        data = (await response.json()) as typeof data;
+      } catch {
+        setError(
+          response.status === 504
+            ? "Autopilot timed out. Nemotron 550B is slow on serverless — try Run Autonomous Ops instead."
+            : `Autopilot failed (${response.status}).`,
+        );
+        setAutopilotSummary(null);
+        return;
+      }
+
       if (!response.ok || !("result" in data) || !data.result) {
-        setError("error" in data ? (data.error ?? "Autopilot failed") : "Autopilot failed");
+        setError(
+          "error" in data && data.error
+            ? data.error
+            : response.status === 401
+              ? "Unauthorized autopilot trigger. Restore purchase access and retry."
+              : `Autopilot failed (${response.status}).`,
+        );
         setAutopilotSummary(null);
         return;
       }
@@ -314,7 +332,7 @@ export function HackathonConsole() {
         setResult(data.result.runs[data.result.runs.length - 1]);
       }
     } catch {
-      setError("Autopilot failed.");
+      setError("Autopilot request failed — network error or server timeout.");
       setAutopilotSummary(null);
     } finally {
       setAutopilotLoading(false);

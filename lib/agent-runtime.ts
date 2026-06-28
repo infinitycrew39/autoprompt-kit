@@ -119,6 +119,8 @@ export async function runAutonomousBusinessOps(input: RunInput) {
     updatedAt: new Date().toISOString(),
   };
 
-  await createAgentRun(record);
+  await createAgentRun(record).catch(() => {
+    // Best-effort persistence; serverless filesystem may be read-only.
+  });
   return record;
 }

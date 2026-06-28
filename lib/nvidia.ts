@@ -57,6 +57,7 @@ export async function generateNemotronPlan(objective: string): Promise<NemotronP
   const apiKey = process.env.NVIDIA_API_KEY;
   const baseUrl = process.env.NVIDIA_NIM_BASE_URL?.trim() || "https://integrate.api.nvidia.com/v1";
   const model = process.env.NVIDIA_NEMOTRON_MODEL?.trim() || "nvidia/nemotron-3-ultra-550b-a55b";
+  const timeoutMs = Number(process.env.NVIDIA_REQUEST_TIMEOUT_MS ?? "8000");
 
   if (!apiKey) {
     return fallbackPlan();
@@ -69,9 +70,11 @@ export async function generateNemotronPlan(objective: string): Promise<NemotronP
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
+      signal: AbortSignal.timeout(Number.isFinite(timeoutMs) ? timeoutMs : 8000),
       body: JSON.stringify({
         model,
         temperature: 0.2,
+        max_tokens: 1200,
         messages: [
           {
             role: "system",
