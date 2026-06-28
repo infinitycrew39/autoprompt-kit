@@ -56,7 +56,7 @@ function fallbackPlan(): NemotronPlan {
 export async function generateNemotronPlan(objective: string): Promise<NemotronPlan> {
   const apiKey = process.env.NVIDIA_API_KEY;
   const baseUrl = process.env.NVIDIA_NIM_BASE_URL?.trim() || "https://integrate.api.nvidia.com/v1";
-  const model = process.env.NVIDIA_NEMOTRON_MODEL?.trim() || "nvidia/llama-3.1-nemotron-ultra-253b-v1";
+  const model = process.env.NVIDIA_NEMOTRON_MODEL?.trim() || "nvidia/nemotron-3-ultra-550b-a55b";
 
   if (!apiKey) {
     return fallbackPlan();
