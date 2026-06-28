@@ -101,6 +101,21 @@ export async function listRecentOrders(limit = 20) {
   return db.orders.slice(0, Math.max(1, limit));
 }
 
+export async function listPaidOrdersByEmail(email: string) {
+  const normalized = email.trim().toLowerCase();
+  if (!normalized) {
+    return [];
+  }
+
+  const db = await readDb();
+  return db.orders
+    .filter(
+      (order) =>
+        order.customerEmail.trim().toLowerCase() === normalized && order.paymentStatus === "paid",
+    )
+    .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt));
+}
+
 export async function hasProcessedWebhookEvent(eventId: string) {
   const db = await readDb();
   return (db.processedWebhookEvents ?? []).includes(eventId);

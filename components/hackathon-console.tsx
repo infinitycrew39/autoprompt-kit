@@ -172,9 +172,9 @@ export function HackathonConsole() {
   }, [sessionId, loadAssets]);
 
   async function restoreAccess() {
-    const trimmed = restoreInput.trim();
-    if (!trimmed) {
-      setError("Paste your session ID from the success page or purchase email.");
+    const trimmedEmail = restoreInput.trim();
+    if (!trimmedEmail) {
+      setError("Enter the Gmail you used at checkout.");
       return;
     }
 
@@ -182,15 +182,26 @@ export function HackathonConsole() {
     setError(null);
 
     try {
-      const verification = await verifySession(trimmed);
-      if (!verification.ok) {
-        setError(verification.data.error ?? "Purchase not found or not paid.");
+      const response = await fetch("/api/access/restore", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: trimmedEmail }),
+      });
+
+      const data = (await response.json()) as {
+        sessionId?: string;
+        plan?: string;
+        error?: string;
+      };
+
+      if (!response.ok || !data.sessionId) {
+        setError(data.error ?? "No paid purchase found for this email.");
         return;
       }
 
-      activateSession(trimmed);
+      activateSession(data.sessionId);
     } catch {
-      setError("Unable to verify purchase session.");
+      setError("Unable to restore access from email.");
     } finally {
       setRestoreLoading(false);
     }
@@ -340,20 +351,21 @@ export function HackathonConsole() {
         <div className="rounded-2xl border border-white/10 bg-[#0C1730]/70 p-5">
           <h3 className="text-lg font-semibold text-white">Already purchased?</h3>
           <p className="mt-1 text-sm text-slate-300">
-            Paste the <code className="rounded bg-white/10 px-1">session_id</code> from your success
-            page URL or purchase email. It looks like <code className="rounded bg-white/10 px-1">cs_...</code>.
+            Enter the Gmail you used at checkout. We will look up your paid order and restore access
+            automatically.
           </p>
           <label className="mt-4 block text-sm text-slate-200">
-            Session ID
+            Purchase email
             <input
               value={restoreInput}
               onChange={(event) => setRestoreInput(event.target.value)}
-              placeholder="cs_live_..."
+              type="email"
+              placeholder="you@gmail.com"
               className="mt-1 w-full rounded-xl border border-white/10 bg-[#081225] p-3 text-sm text-slate-100"
             />
           </label>
           <Button className="mt-3" onClick={restoreAccess} disabled={restoreLoading}>
-            {restoreLoading ? "Verifying..." : "Restore Access"}
+            {restoreLoading ? "Looking up purchase..." : "Restore Access"}
           </Button>
         </div>
 
