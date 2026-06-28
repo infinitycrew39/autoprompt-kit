@@ -63,7 +63,6 @@ export function HackathonConsole() {
   );
   const [budgetCents, setBudgetCents] = useState(5000);
   const [loading, setLoading] = useState(false);
-  const [autopilotLoading, setAutopilotLoading] = useState(false);
   const [assetsLoading, setAssetsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<RunResponse["run"] | null>(null);
@@ -71,12 +70,6 @@ export function HackathonConsole() {
   const [plan, setPlan] = useState<string | null>(null);
   const [selectedAsset, setSelectedAsset] = useState("");
   const [assetPreview, setAssetPreview] = useState("");
-  const [autopilotSummary, setAutopilotSummary] = useState<{
-    count: number;
-    spentCents: number;
-    projectedRevenueCents: number;
-    roiCents: number;
-  } | null>(null);
 
   const activateSession = useCallback(
     (nextSessionId: string, replaceUrl = true) => {
@@ -263,82 +256,6 @@ export function HackathonConsole() {
     }
   }
 
-  async function runAutopilot() {
-    if (!sessionId) {
-      setError("Purchase session required. Complete checkout first.");
-      return;
-    }
-
-    setAutopilotLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch("/api/agent/autopilot", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          budgetCents,
-          promptAssetKey: selectedAsset,
-          sessionId,
-          limit: 1,
-        }),
-      });
-
-      let data:
-        | {
-            result?: {
-              count: number;
-              spentCents: number;
-              projectedRevenueCents: number;
-              roiCents: number;
-              runs?: Array<RunResponse["run"]>;
-            };
-            error?: string;
-          }
-        | { error: string };
-
-      try {
-        data = (await response.json()) as typeof data;
-      } catch {
-        setError(
-          response.status === 504
-            ? "Autopilot timed out. Nemotron 550B is slow on serverless — try Run Autonomous Ops instead."
-            : `Autopilot failed (${response.status}).`,
-        );
-        setAutopilotSummary(null);
-        return;
-      }
-
-      if (!response.ok || !("result" in data) || !data.result) {
-        setError(
-          "error" in data && data.error
-            ? data.error
-            : response.status === 401
-              ? "Unauthorized autopilot trigger. Restore purchase access and retry."
-              : `Autopilot failed (${response.status}).`,
-        );
-        setAutopilotSummary(null);
-        return;
-      }
-
-      setAutopilotSummary({
-        count: data.result.count,
-        spentCents: data.result.spentCents,
-        projectedRevenueCents: data.result.projectedRevenueCents,
-        roiCents: data.result.roiCents,
-      });
-
-      if (Array.isArray(data.result.runs) && data.result.runs.length > 0) {
-        setResult(data.result.runs[data.result.runs.length - 1]);
-      }
-    } catch {
-      setError("Autopilot request failed — network error or server timeout.");
-      setAutopilotSummary(null);
-    } finally {
-      setAutopilotLoading(false);
-    }
-  }
-
   if (!sessionReady) {
     return (
       <div className="rounded-2xl border border-white/10 bg-[#0C1730]/70 p-5 text-sm text-slate-300">
@@ -419,9 +336,6 @@ export function HackathonConsole() {
             >
               Preview Selected File
             </Button>
-            <Button type="button" onClick={runAutopilot} disabled={autopilotLoading || assets.length === 0}>
-              {autopilotLoading ? "Autopilot Running..." : "Run Full Autopilot"}
-            </Button>
           </div>
 
           <label className="block text-sm text-slate-200">
@@ -473,17 +387,6 @@ export function HackathonConsole() {
             <div className="rounded-xl border border-cyan-400/20 bg-cyan-500/5 p-3 text-xs text-cyan-100">
               <p className="font-semibold uppercase tracking-[0.12em] text-cyan-300">Asset Preview</p>
               <pre className="mt-2 overflow-auto whitespace-pre-wrap">{assetPreview}</pre>
-            </div>
-          ) : null}
-
-          {autopilotSummary ? (
-            <div className="rounded-xl border border-emerald-400/20 bg-emerald-500/5 p-3 text-xs text-emerald-100">
-              <p className="font-semibold uppercase tracking-[0.12em] text-emerald-300">Autopilot Summary</p>
-              <p className="mt-2">
-                Runs: {autopilotSummary.count} | Spent: ${(autopilotSummary.spentCents / 100).toFixed(2)} |
-                Revenue: ${(autopilotSummary.projectedRevenueCents / 100).toFixed(2)} | ROI: $
-                {(autopilotSummary.roiCents / 100).toFixed(2)}
-              </p>
             </div>
           ) : null}
         </div>
