@@ -2,7 +2,7 @@ import { ArrowRight, PlayCircle, Sparkles } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
-import { heroSubtitle, heroTitle, sectionBadge, trustedBy } from "@/lib/site-data";
+import { heroSubtitle, heroTitle, sectionBadge, trustedBy, demoVideoUrl } from "@/lib/site-data";
 
 export function HeroSection() {
   return (
@@ -34,7 +34,12 @@ export function HeroSection() {
               </a>
             </Button>
             <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto">
-              <a href="#demo" className="group text-base">
+              <a
+                href={demoVideoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group text-base"
+              >
                 <PlayCircle className="mr-2 h-5 w-5 text-cyan-300" />
                 Watch Demo
               </a>

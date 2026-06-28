@@ -268,6 +268,7 @@ export const trustedBy = [
 ];
 
 export const brandName = "AutoPrompt Kit";
+export const demoVideoUrl = "https://x.com/InfinityCrew39/status/2071243980310982705";
 export const heroTitle = "Unlock the Full Power of Autonomous AI Agents";
 export const heroSubtitle =
   "A premium collection of battle-tested Prompt Packs engineered for Hermes, Nemotron, Claude, Cursor, Grok, and the next generation of autonomous systems.";
