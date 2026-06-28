@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { listRecentOrders } from "@/lib/orders";
+import { listAdminOrders } from "@/lib/admin-orders";
 
 type SearchParams = {
   limit?: string;
@@ -79,7 +79,7 @@ export async function GET(request: Request) {
     const parsedLimit = Number(params.limit ?? "20");
     const limit = Number.isFinite(parsedLimit) ? Math.min(Math.max(parsedLimit, 1), 100) : 20;
 
-    const orders = await listRecentOrders(limit);
+    const orders = await listAdminOrders(limit);
     const filtered = params.status
       ? orders.filter((order) => order.paymentStatus === params.status)
       : orders;

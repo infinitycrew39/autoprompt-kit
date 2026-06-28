@@ -1,31 +1,4 @@
 {
-  "orders": [
-    {
-      "sessionId": "cs_duplicate_guard_demo",
-      "plan": "starter",
-      "customerEmail": "buyer@example.com",
-      "amountTotal": 4900,
-      "currency": "usd",
-      "paymentStatus": "paid",
-      "deliveryEmailSent": true,
-      "deliveryEmailReason": "Fallback sender used: onboarding@resend.dev",
-      "createdAt": "2026-06-19T01:12:58.870Z",
-      "updatedAt": "2026-06-19T01:12:58.870Z"
-    },
-    {
-      "sessionId": "cs_local_1781831373703",
-      "plan": "professional",
-      "customerEmail": "buyer@example.com",
-      "amountTotal": 9900,
-      "currency": "usd",
-      "paymentStatus": "paid",
-      "deliveryEmailSent": true,
-      "deliveryEmailReason": "Fallback sender used: onboarding@resend.dev",
-      "createdAt": "2026-06-19T01:09:34.946Z",
-      "updatedAt": "2026-06-19T01:09:34.946Z"
-    }
-  ],
-  "processedWebhookEvents": [
-    "evt_duplicate_guard_demo"
-  ]
+  "orders": [],
+  "processedWebhookEvents": []
 }

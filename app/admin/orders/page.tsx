@@ -1,6 +1,6 @@
 import { ShieldAlert } from "lucide-react";
 
-import { listRecentOrders } from "@/lib/orders";
+import { listAdminOrders } from "@/lib/admin-orders";
 
 type AdminOrdersPageProps = {
   searchParams: {
@@ -48,7 +48,7 @@ export default async function AdminOrdersPage({ searchParams }: AdminOrdersPageP
     );
   }
 
-  const orders = await listRecentOrders(100);
+  const orders = await listAdminOrders(100);
   const filteredOrders = selectedStatus !== "all"
     ? orders.filter((order) => order.paymentStatus === selectedStatus)
     : orders;
@@ -61,7 +61,7 @@ export default async function AdminOrdersPage({ searchParams }: AdminOrdersPageP
         <header className="space-y-2">
           <h1 className="font-display text-3xl text-white sm:text-4xl">Orders Dashboard</h1>
           <p className="text-sm text-slate-300">
-            Real-time local order audit from Stripe webhook events.
+            Live orders synced from Stripe checkout sessions, with delivery status from webhook logs.
           </p>
         </header>
 
