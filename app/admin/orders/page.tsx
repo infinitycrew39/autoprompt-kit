@@ -67,6 +67,11 @@ export default async function AdminOrdersPage({ searchParams }: AdminOrdersPageP
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200">
           <p>Total orders: {filteredOrders.length}</p>
+          {process.env.ADMIN_ORDERS_SINCE ? (
+            <p className="mt-1 text-xs text-slate-400">
+              Showing orders on or after {new Date(process.env.ADMIN_ORDERS_SINCE).toLocaleString()}.
+            </p>
+          ) : null}
         </div>
 
         <div className="flex flex-wrap items-center gap-2">

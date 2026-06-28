@@ -43,9 +43,34 @@ function toOrderFromStripeSession(
   };
 }
 
+function getOrdersSinceMs() {
+  const raw = process.env.ADMIN_ORDERS_SINCE?.trim();
+  if (!raw) {
+    return 0;
+  }
+
+  const parsed = Date.parse(raw);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function isOrderAfterReset(order: OrderRecord) {
+  const sinceMs = getOrdersSinceMs();
+  if (!sinceMs) {
+    return true;
+  }
+
+  const updatedMs = Date.parse(order.updatedAt);
+  const createdMs = Date.parse(order.createdAt);
+  return (
+    (Number.isFinite(updatedMs) && updatedMs >= sinceMs) ||
+    (Number.isFinite(createdMs) && createdMs >= sinceMs)
+  );
+}
+
 export async function listAdminOrders(limit = 100): Promise<OrderRecord[]> {
+  const sinceMs = getOrdersSinceMs();
   const localOrders = (await listRecentOrders(limit)).filter(
-    (order) => !DEMO_SESSION_IDS.has(order.sessionId),
+    (order) => !DEMO_SESSION_IDS.has(order.sessionId) && isOrderAfterReset(order),
   );
   const localBySessionId = new Map(localOrders.map((order) => [order.sessionId, order]));
 
@@ -61,6 +86,7 @@ export async function listAdminOrders(limit = 100): Promise<OrderRecord[]> {
 
     const stripeOrders = sessions.data
       .filter((session) => isAutopromptSession(session.metadata))
+      .filter((session) => !sinceMs || session.created * 1000 >= sinceMs)
       .map((session) => toOrderFromStripeSession(session, localBySessionId.get(session.id)));
 
     const merged = new Map<string, OrderRecord>();
@@ -75,6 +101,7 @@ export async function listAdminOrders(limit = 100): Promise<OrderRecord[]> {
     }
 
     return Array.from(merged.values())
+      .filter(isOrderAfterReset)
       .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt))
       .slice(0, limit);
   } catch {
